@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>urls in Test Table</title>
+         
+         
+ <style type="text/css">
+      tr:nth-child(even) {background: #CFC}
+      tr:nth-child(odd) {background: #CFF}
+      
+</style>
+           
+    
+  </head>
+   <body>
+
+      <table border=1 >
+       <tr>
+         <td> <center><strong style="color: blue; background: yellow">URL</strong> </center> </td>
+         
+        </tr> 
+        {% for item in user_list %}
+           <tr>
+               <td>{{item}}</td>
+           </tr>
+        {% endfor %}
+       
+      </table>
+     
+      <a href = "/">Go back to home page</a>
+    </body>
+<html>
